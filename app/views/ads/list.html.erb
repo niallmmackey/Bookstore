@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>View All Books</title>
+</head>
+<body>
+<p>
+	<% for ad in @ads %>
+		<li><a href="/ads/<%= ad.id %>"><%= ad.name %></a></li>
+		<a href="/ads/<%=ad.id%>/edit">Edit</a>
+		<a href="/ads/<%=ad.id%>/delete">Delete</a>
+	<% end %>
+</p>
+</body>
+
+</html>
+
+
